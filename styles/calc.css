@@ -1,14 +1,23 @@
 .calc {
 	display: grid;
 	background-color: var(--white);
-	padding: 2em;
-	border-radius: 1em;
-	gap: 1em;
+	padding: 2rem;
+	border-radius: 1rem;
+	gap: 1rem;
 	width: 100%;
 	max-width: 375px;
+	position: relative;
+	margin-top: 10rem;
 }
 
 .calc__section {
 	display: grid;
-	gap: 0.5em;
+	gap: 0.5rem;
+}
+
+.calc__logo {
+	position: absolute;
+	top: -5rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
