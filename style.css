@@ -23,6 +23,7 @@
 	--very-light-grayish-cyan: hsl(189, 41%, 97%);
 	--white: hsl(0, 0%, 100%);
 	--text-input: rgb(243, 248, 251);
+	--hover: rgb(159, 232, 223);
 }
 
 body {
@@ -38,11 +39,21 @@ body {
 /* || FOOTER */
 
 .footer {
-	font-size: 0.5em;
-	padding: 1em 5%;
+	font-size: 0.5rem;
+	padding: 1rem 5%;
 	text-align: center;
 }
 .footer a {
 	font-size: inherit;
-	color: hsl(228, 45%, 44%);
+	color: var(--strong-cyan);
+}
+
+@media screen and (min-width: 480px) {
+	body {
+		align-items: center;
+	}
+
+	.footer {
+		font-size: 1rem;
+	}
 }

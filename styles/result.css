@@ -3,12 +3,13 @@
 	padding: 2rem 1.5rem;
 	gap: 1rem;
 	border-radius: 1rem;
+	grid-template-rows: min-content min-content auto;
 }
 
 .result__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: min-content min-content;
 }
 
 .result__amount,
@@ -22,6 +23,7 @@
 
 .result__title {
 	color: var(--white);
+	align-self: end;
 }
 
 .result__unit {
@@ -32,8 +34,25 @@
 	border: none;
 	background-color: var(--strong-cyan);
 	height: 3rem;
-	border-radius: 0.25rem;
-	margin-top: 1rem;
+	border-radius: 0.5rem;
+	margin-top: auto;
 	font-size: 1.25rem;
 	color: var(--very-dark-cyan);
+	cursor: pointer;
+}
+.result__reset:hover {
+	background-color: var(--hover);
+}
+
+@media screen and (min-width: 480px) {
+	.result {
+		grid-column: 2/3;
+		grid-row: 1/4;
+		padding: 3rem;
+	}
+
+	.result__amount,
+	.result__amount > * {
+		font-size: 3rem;
+	}
 }

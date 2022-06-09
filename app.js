@@ -19,11 +19,11 @@ const nums = {
 
 	caculate() {
 		this._total = (this._bill * this._tip) / 100;
-		total.innerText = this._total ? this._total.toFixed(2) : "__";
+		total.innerText = this._total ? this._total.toFixed(2) : "_.__";
 
 		this._tipAmount = this._total / this._people;
 		tipAmount.innerText =
-			this._tipAmount && this._people ? this._tipAmount.toFixed(2) : "__";
+			this._tipAmount && this._people ? this._tipAmount.toFixed(2) : "_.__";
 	},
 
 	reset() {
@@ -105,6 +105,8 @@ function reset() {
 	customTip.value = null;
 	people.value = null;
 	nums.reset();
+	total.innerText = "0.00";
+	tipAmount.innerText = "0.00";
 }
 
 reset();

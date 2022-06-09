@@ -8,6 +8,7 @@
 	max-width: 375px;
 	position: relative;
 	margin-top: 10rem;
+	box-shadow: 0 0 2rem rgb(0, 0, 0, 0.1);
 }
 
 .calc__section {
@@ -21,4 +22,14 @@
 	top: -5rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 480px) {
+	.calc {
+		min-width: 60rem;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 0rem;
+		gap: 3rem;
+		padding-left: 3rem;
+	}
 }
