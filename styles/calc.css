@@ -1,0 +1,14 @@
+.calc {
+	display: grid;
+	background-color: var(--white);
+	padding: 2em;
+	border-radius: 1em;
+	gap: 1em;
+	width: 100%;
+	max-width: 375px;
+}
+
+.calc__section {
+	display: grid;
+	gap: 0.5em;
+}

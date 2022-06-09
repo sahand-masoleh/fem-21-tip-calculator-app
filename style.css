@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("./styles/calc.css");
+@import url("./styles/input.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Space Mono", monospace;
+	/* font-size: 24px; */
+	color: var(--dark-grayish-cyan);
+}
+
+:root {
+	/* ### primary */
+	--strong-cyan: hsl(172, 67%, 45%);
+
+	/* ### neutral */
+	--very-dark-cyan: hsl(183, 100%, 15%);
+	--dark-grayish-cyan: hsl(186, 14%, 43%);
+	--grayish-cyan: hsl(184, 14%, 56%);
+	--light-grayish-cyan: hsl(185, 41%, 84%);
+	--very-light-grayish-cyan: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
+	--text-input: rgb(243, 248, 251);
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--light-grayish-cyan);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	align-items: end;
+	justify-items: center;
+}
+
+/* || FOOTER */
+
+.footer {
+	font-size: 0.5em;
+	padding: 1em 5%;
+	text-align: center;
+}
+.footer a {
+	font-size: inherit;
+	color: hsl(228, 45%, 44%);
+}

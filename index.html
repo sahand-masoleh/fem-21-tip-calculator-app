@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+  <main class="calc">
+
+    <label class="calc__section input-text">
+      Bill
+      <input type="text" class="input-text__field">
+      <img src="images/icon-dollar.svg" alt="" class="input-text__icon">
+    </label>
+
+    <fieldset class="calc__section input-radio">
+      <legend class="input-radio__legend">Select Tip %</legend>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option" data-factor="5">
+        5%
+      </label>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option" data-factor="10">
+        10%
+      </label>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option" data-factor="15">
+        15%
+      </label>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option" data-factor="25">
+        25%
+      </label>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option" data-factor="50">
+        50%
+      </label>
+      <label class="input-radio__label">
+        <input type="radio" class="input-radio__option input-radio__option--custom" data-factor="custom">
+      </label>
+      <input type="text" name="tip" placeholder="Custom" class="input-text__field" id="custom-tip">
+    </fieldset>
+
+    <label class="calc__section input-text">
+      Number of People
+      <input type="text" class="input-text__field">
+      <img src="images/icon-person.svg" alt="" class="input-text__icon">
+    </label>
+
+    <div class="calc__section result">
+      <div class="result__container">
+        <p class="result__title">Tip Amount</p>
+        <p class="result__unit">/ person</p>
+        <p class="result__amount" id="tipAmount"></p>
+      </div>
+      <div class="result__container">
+        <p class="result__title">Total</p>
+        <p class="result__unit">/ person</p>
+        <p class="result__amount" id="total"></p>
+      </div>
+      button.
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#" target="_blank">Sahand Masoleh</a>.
+  </footer>
+</body>
+
+</html>
