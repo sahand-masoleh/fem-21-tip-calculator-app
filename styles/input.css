@@ -67,3 +67,17 @@
 .input-text__field--radio {
 	font-size: inherit;
 }
+
+.error-text {
+	display: none;
+	position: absolute;
+	right: 0;
+	color: red;
+}
+
+.error {
+	outline: 2px solid red !important;
+}
+.error ~ .error-text {
+	display: block !important;
+}

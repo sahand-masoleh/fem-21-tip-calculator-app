@@ -49,7 +49,25 @@ customTip.addEventListener("input", (event) =>
 );
 
 function handleTextInputChange(element, event) {
-	const { value } = event.target;
+	const { target } = event;
+	const errorText = target.nextElementSibling;
+	let { value } = target;
+	if (target.classList.contains("error")) {
+		target.classList.remove("error");
+	}
+	// if the input contains anything but digits and decimal points
+	if (value && !/^\d+(\.\d+)?$/.test(value)) {
+		errorText.innerText = "Invalid Number";
+		target.classList.add("error");
+		nums[element] = null;
+		return;
+		// if the input is zero
+	} else if (value === "0") {
+		errorText.innerText = "Can't be zero";
+		target.classList.add("error");
+		nums[element] = null;
+		return;
+	}
 	nums[element] = value;
 }
 
@@ -84,6 +102,7 @@ function reset() {
 	for (let tipOption of tipOptions) {
 		tipOption.checked = false;
 	}
+	customTip.value = null;
 	people.value = null;
 	nums.reset();
 }
