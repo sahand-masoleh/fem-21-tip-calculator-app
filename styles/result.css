@@ -44,7 +44,7 @@
 	background-color: var(--hover);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	.result {
 		grid-column: 2/3;
 		grid-row: 1/4;
