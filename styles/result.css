@@ -11,7 +11,8 @@
 	grid-template-rows: 1fr 1fr;
 }
 
-.result__amount {
+.result__amount,
+.result__amount > * {
 	justify-self: right;
 	grid-column: 2/3;
 	grid-row: 1/3;
