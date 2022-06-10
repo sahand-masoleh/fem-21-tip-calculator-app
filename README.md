@@ -23,6 +23,7 @@ Users should be able to:
 
 ![Desktop](./screenshots/desktop.jpg)![Mobile](./screenshots/mobile.jpg)
 ![Desktop: Active](./screenshots/active.jpg)
+![Video](./screenshots/video.mp4)
 
 ### Links
 
