@@ -23,7 +23,7 @@ Users should be able to:
 
 ![Desktop](./screenshots/desktop.jpg)![Mobile](./screenshots/mobile.jpg)
 ![Desktop: Active](./screenshots/active.jpg)
-![Video](./screenshots/video.mp4)
+![Video](https://user-images.githubusercontent.com/63850404/172964682-a7011795-f9ab-465f-adeb-70e9e65df5a5.mp4)
 
 ### Links
 
